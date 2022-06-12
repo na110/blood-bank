@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+         <div class="AdminCircle" id="AdmincircleOne"></div>
+        <div class="whiteCircle" ></div> -->
+         <div class="AdminCircle" id="AdmincircleTwo"></div> 
+
+        <div class="my-container shadow">
+
+        <!-- nav starting -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white rounded">
+           <div class="container">
+            <a class="navbar-brand " href="#"> <img src="img/logo.png" style="width: 100px;" alt="">انقاذ حياة</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0 mr-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="far fa-bell"></i>
+                    </a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <i class="far fa-envelope"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <img src="img/testimonial/7.jpg" class="img-profile rounded-circle">
+                </li>
+                
+              </ul>
+              
+            </div>
+           </div>
+        </nav>
+
+        <!-- nav ending -->
+
+
+        <!-- sidebar starting -->
+
+
+        <section class="sidebar">
+            <div class="row ">
+                <div class="col-4">
+                  <div class="list-group shadow-sm " id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">
+
+                        
+                        <img src="img/admin/001-blood-donation.svg" class="list-img" alt="">
+                        المتبرعين
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">
+                        <img src="img/admin/004-blood.svg" class="list-img" alt="">
+                        الحملات</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">
+                        <img src="img/admin/003-squeeze-ball.svg" class="list-img" alt="">
+                        طلبات الدم</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+                        <img src="img/admin/002-blood-bank.svg" class="list-img" alt="">
+                        بنوك الدم</a>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <section>
+                            <div class="row justify-content-between">
+                                <h4 class="col-md-3">المتبرعين</h4>
+                                <div class="col-md-3 "><a  href="#" class="bg-danger btnDonarAdd p-3 rounded-pill">اضافة متبرع</a></div>
+                            </div>
+                            <table id="myProducts" cellspacing="0" class="  table table-hover table-responsive-sm  table-borderless my-2 ">
+                                <thead >
+                                    <tr >
+                                        <th>مسلسل</th>
+                                        <th>الاسم</th>
+                                        <th>الايميل</th>
+                                        <th>التليفون</th>
+                                        <th>فصيلته</th>
+                                        <th>تعديل</th>
+                                        <th>حذف</th>
+                                    </tr>
+                                </thea>
+                                <tbody id="tableBody" >
+                                    <tr class="bg-white rounded donarRow">
+                                        <td>1</td>
+                                        <td>حمصة</td>
+                                        <td>homasa@gmail.com</td>
+                                        <td>01223034847</td>
+                                        <td>ِA+</td>
+                                        <td>تعديل </td>
+                                        <td>حذف</td>
+                                    </tr>
+                                    <tr class="bg-white rounded donarRow my-2">
+                                        <td>1</td>
+                                        <td>بندق</td>
+                                        <td>homasa@gmail.com</td>
+                                        <td>01223034847</td>
+                                        <td>ِA+</td>
+                                        <td>تعديل </td>
+                                        <td>حذف</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <section>
+                            <div class="row justify-content-between">
+                                <h4 class="col-md-3">الحملات</h4>
+                            </div>
+                            <table id="myProducts"  class="  table table-hover table-responsive-sm  table-borderless my-2 ">
+                                <thead >
+                                    <tr >
+                                        <th>مسلسل</th>
+                                        <th >بنك الدم</th>
+                                        <th>التاريخ</th>
+                                        <th>من</th>
+                                        <th>إلي</th>
+                                        <th>المكان</th>
+                                        <th>حذف</th>
+                                    </tr>
+                                </thea>
+                                <tbody id="tableBody" >
+                                    <tr class="bg-white rounded donarRow">
+                                        <td>1</td>
+                                        <td>مستشفي المبرة</td>
+                                        <td>1/8/2020</td>
+                                        <td>12.00م</td>
+                                        <td>ِ2.30م</td>
+                                        <td>كلية العلوم</td>
+                                        <td>حذف</td>
+                                    </tr>
+                                    <tr class="bg-white rounded donarRow">
+                                        <td>1</td>
+                                        <td>مستشفي الشفا</td>
+                                        <td>1/8/2020</td>
+                                        <td>12.00م</td>
+                                        <td>ِ2.30م</td>
+                                        <td>كلية الهندسة</td>
+                                        <td>حذف</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <section>
+                            <div class="row justify-content-between">
+                                <h4 class="col-md-3">طلبات الدم</h4>
+                            </div>
+                            <table id="myProducts"  class="  table table-hover table-responsive-sm  table-borderless my-2 ">
+                                <thead >
+                                    <tr >
+                                        <th>مسلسل</th>
+                                        <th >المريض</th>
+                                        <th>تليفونه</th>
+                                        <th>مكانه</th>
+                                        <th>فصيلة الدم</th>
+                                        <th>رسالة للمتبرع</th>
+                                        <th>حذف</th>
+                                    </tr>
+                                </thea>
+                                <tbody id="tableBody" >
+                                    <tr class="bg-white rounded donarRow">
+                                        <td>1</td>
+                                        <td>عبدالله</td>
+                                        <td>01253648976</td>
+                                        <td>مستشفي أبوقير</td>
+                                        <td>O-</td>
+                                        <td> انا محتاج دم ضروري بسبب حادثة </td>
+                                        <td>حذف</td>
+                                    </tr>
+                                  
+                                    
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <section>
+                            <div class="row justify-content-between">
+                                <h4 class="col-md-3">بنوك الدم</h4>
+                            </div>
+                            <table id="myProducts"  class="  table table-hover table-responsive-sm  table-borderless my-2 ">
+                                <thead >
+                                    <tr >
+                                        <th>مسلسل</th>
+                                        <th >بنك الدم</th>
+                                        <th>مكانه</th>
+                                        
+                                    </tr>
+                                </thea>
+                                <tbody id="tableBody" >
+                                    <tr class="bg-white rounded donarRow">
+                                        <td>1</td>
+                                        <td>مستشفي المبرة</td>
+                                        <td>الابراهيمية</td>
+                                        <td>حذف</td>
+                                    </tr>
+                                    <tr class="bg-white rounded donarRow">
+                                        <td>1</td>
+                                        <td>مستشفي المبرة</td>
+                                        <td>الابراهيمية</td>
+                                        <td>حذف</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+        <!-- sidebar ending -->
+
+        </div>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

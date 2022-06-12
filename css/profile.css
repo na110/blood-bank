@@ -1,0 +1,383 @@
+*{
+   
+    direction: rtl;
+}
+
+/* navbar */
+.navbar{
+   
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 9999;
+    color:rgb(210, 60, 70) !important;
+   
+    }
+    .mynav{
+    
+      display: flex;
+      justify-content:space-between ;
+     
+    }
+    
+    .nav-item a{
+    font-size: 1.2rem;
+        padding: .4rem;
+        margin: .3rem;
+        color:rgb(245, 245, 245) !important
+    
+    }
+    
+    
+    .reg{
+       
+        font-weight: bold;
+         font-size: 1.5rem;
+ 
+    
+    }
+    .navbar-brand{
+     padding: .4rem;
+     margin: .3rem;
+     font-size: 1.5rem;
+        color:rgb(248, 248, 248) !important;
+       
+        font-weight: bold !important;
+    }
+    
+    /* end navbar*/
+
+body
+{
+    background-color: rgb(224, 231, 229);
+}
+
+
+
+#header
+{
+    height: 250px;
+    background: linear-gradient(90deg, rgba(145, 3, 3, 1) 0%, hsla(359, 95%, 57%, 0.8)  90%);
+}
+
+
+#rotate
+{
+    transform: rotate(270deg);
+}
+.move
+{
+    position: relative;
+    top:40px;
+   left:900px
+}
+.box-shadow
+{
+    background-color:rgb(253, 253, 250);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    position: relative;
+    bottom:260px;
+}
+.counter-box
+{  
+     background-color:rgb(253, 253, 250);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 2px solid rgba(146, 106, 111, 0.39);
+    margin-bottom: 50px;
+
+}
+.box
+{
+    background-color:rgb(253, 253, 250);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    transition: transform .9s;
+   
+   
+}
+.box .sp
+{
+    color: #6f7172;
+    font-weight: bold;
+   
+}
+.box:hover
+{
+ background-color: #f86262;
+ transform: scale(1.1);
+ color:white;
+ padding: 5px;
+
+}
+
+
+p .blood
+{
+    color: rgb(136, 135, 134);
+    font-weight: bold;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.profile-name
+{
+
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+#model
+{
+   
+    color: rgb(107, 109, 110);
+}
+#model:hover
+{
+    color: #f86262;
+}
+.time
+{
+    color: rgb(64, 49, 160);
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+p .blood-type
+{
+    background-color: #cc2c2c;
+    color: rgb(255, 254, 254);
+    padding: 10px;
+    font-weight:600;
+    border-top-right-radius: 60%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius:50% ;
+ 
+}
+.progress-bar
+{
+    background-color: #cc2c2c;
+}
+.text-color
+{
+    color: rgb(64, 49, 160);
+    font-weight: bold;
+    font-size: 20px;
+}
+.tim
+{
+    color: slategrey;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.profile-info
+{
+    position: relative;
+    bottom:110px;
+   
+}
+.profile-img img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.social-list li
+{
+    list-style:none;
+    padding-top: 20px;
+    text-align: right;
+}
+.left{
+    float: left;
+    color:rgb(154, 156, 158) ;
+    padding-left: 10px;
+}
+
+.social-list li i
+{
+    color: rgb(255, 71, 71);
+    padding: 10px;
+}
+.fa-map-marker
+{
+    transform: rotate(180deg);
+}
+
+#accordionExample
+{
+    margin-top: 100px;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgb(238, 59, 59);
+    border-bottom: 1px solid rgba(92, 86, 86, 0.8);
+   
+}
+.btn-link
+{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.btn-link:hover
+{
+    text-decoration: none;
+    color:white;
+}
+.card-body
+{
+    color: rgb(167, 163, 167);
+
+}
+.share
+{
+    font-size: 20px;
+    color: rgb(255, 251, 255);
+    background-color: rgba(116, 113, 113, 0.288);
+}
+
+
+.social-list1 a 
+{
+ margin: 2rem;
+ color: rgb(255, 71, 71);
+ background-color: rgb(255, 254, 254);
+
+
+ font-size: 20px;
+}
+.social-list1 a i
+{
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: center;
+    border:1px solid #999;
+}
+.social-list1 a :hover
+{
+    color: rgb(255, 255, 255);
+    background-color:rgb(255, 71, 71) ;
+}
+
+/*footer*/
+#footer
+{
+    background-color:#273036;
+    background-image: linear-gradient(180deg, #640303 60% , #000000 80%);
+    opacity: 0.9;
+    color: white;
+    text-align: right;
+   
+}
+.call-info h3
+{
+    padding-bottom: 15px;
+}
+.social-list
+{
+    margin-top: 50px;
+   
+  margin-bottom: 50px;
+}
+#footer  .social-list a{
+    
+
+    color:rgb(252, 248, 248);
+    
+}
+
+#footer .social-list i{
+    margin-right: 10px;
+    border:1px solid #999;
+    width:40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+}
+#footer .social-list i:hover{
+    color:#fff;
+    background-color: #D62E33;
+    border:1px solid #D62E33;
+}
+.call-info ul
+{
+  list-style: none;
+}
+.call-info ul .addres
+{
+  font-weight: bold;
+}
+.addres ul li
+{
+  font-weight: 400;
+}
+.call-info ul .addres::before
+{
+    content: "\25CB";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #EA4335; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: -1em; /* Also needed for space (tweak if needed) */
+    margin-left: 1em; /* Also needed for space (tweak if needed) */
+}
+.subscribe-box
+{
+    margin: 0 auto;
+    background-color:#f7eef7;
+    padding: 30px;
+    box-shadow: 0 1px 1px 0 rgba(204, 30, 30, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+.location-img img
+{
+ width: 100%;
+
+}
+.btn-outline-secondary
+{
+    color: white;
+    border-color: white;
+    background-color: #D62E33;
+   margin-right: 50px;
+}
+.btn-outline-secondary:hover
+{ 
+    background-color: #9c1217;
+    border:1px solid #fcf9f9;
+    color: rgb(246, 250, 250);
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.footer-down
+{
+
+  margin-bottom: 0px;
+  margin-top: 5rem;
+}
+.footer-down p
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+  text-align: center;
+}
+/*endfooter*/
+

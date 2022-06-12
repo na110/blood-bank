@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Blood Donors</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/volunteer.css">
+    
+</head>
+<body>
+    
+<!--start nav-->
+<nav class="navbar navbar-expand-lg navbar-light bg-transperant justify-content-between d-flex position-absolute">
+    <a class="navbar-brand " href="#"> <img src="img/logo.png" style="width: 100px;" alt="">انقاذ حياة</a>
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    
+        <ul class="navbar-nav mr-auto  ">
+  
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#about">معلومات عننا <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="bloodRequests.html">طلبات الدم<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#"> المتبرعون <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#blood-bank">بنك الدم <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#camps">حملات التبرع <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#footer">اتصل بنا <span class="sr-only">(current)</span></a>
+          </li>
+       
+      </ul>
+    
+    </div>
+    
+    <div class="collapse navbar-collapse mr-auto " id="navbarSupportedContent">
+      <ul class="navbar-nav  ">
+  
+        <li class="nav-item ">
+            <a class="nav-link reg  " href="#blood-bank" data-toggle="modal" data-target="#exampleModal">تسجيل دخول <span class="sr-only">(current)</span></a>
+          </li>
+          </ul>
+      </div>
+  </nav>
+  
+  
+<section id="header">
+    <h2 class="text-white">المتبرعون بالدم</h2>
+    <svg id="rotate" width="100" height="100" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#8f0505;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#ee8e8e;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <path fill="url(#grad2)"
+        d="M53.2,-54.5C68.3,-38,79.7,-19,79.1,-0.6C78.5,17.8,66,35.6,50.8,49.2C35.6,62.7,17.8,71.9,-2.5,74.5C-22.9,77,-45.7,72.8,-60.2,59.3C-74.7,45.7,-80.9,22.9,-80.4,0.5C-79.9,-21.9,-72.7,-43.7,-58.2,-60.3C-43.7,-76.8,-21.9,-88,-1.4,-86.6C19,-85.1,38,-71.1,53.2,-54.5Z"
+        transform="translate(100 100)" />
+    </svg>
+    <svg id="rotate" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#8f0505;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#f3dada;stop-opacity:.2" />
+        </linearGradient>
+    </defs>
+    <path fill="url(#grad2)"
+        d="M53.2,-54.5C68.3,-38,79.7,-19,79.1,-0.6C78.5,17.8,66,35.6,50.8,49.2C35.6,62.7,17.8,71.9,-2.5,74.5C-22.9,77,-45.7,72.8,-60.2,59.3C-74.7,45.7,-80.9,22.9,-80.4,0.5C-79.9,-21.9,-72.7,-43.7,-58.2,-60.3C-43.7,-76.8,-21.9,-88,-1.4,-86.6C19,-85.1,38,-71.1,53.2,-54.5Z"
+        transform="translate(100 100)" />
+    </svg>
+
+    <svg id="rotate" class="move" width="100" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#8f0505;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#f3dada;stop-opacity:.2" />
+        </linearGradient>
+    </defs>
+    <path fill="url(#grad2)"
+        d="M53.2,-54.5C68.3,-38,79.7,-19,79.1,-0.6C78.5,17.8,66,35.6,50.8,49.2C35.6,62.7,17.8,71.9,-2.5,74.5C-22.9,77,-45.7,72.8,-60.2,59.3C-74.7,45.7,-80.9,22.9,-80.4,0.5C-79.9,-21.9,-72.7,-43.7,-58.2,-60.3C-43.7,-76.8,-21.9,-88,-1.4,-86.6C19,-85.1,38,-71.1,53.2,-54.5Z"
+        transform="translate(100 100)" />
+    </svg>
+</section>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#920303;stop-opacity:1" />
+        <stop offset="90%" style="stop-color:#fa272afa;stop-opacity:.8" />
+    </linearGradient>
+    </defs>
+
+    <path fill="url(#grad1)" fill-opacity="1" d="M0,224L1440,96L1440,0L0,0Z"></path>
+
+</svg>
+    <!-- volunteers section -->
+    <section id="volunteers" class="position-relative">
+        <div class="bloodImg">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" >
+                <path fill="rgba(229, 170, 176, 0.5)" d="M31.1,-29.1C41.8,-11.3,53.1,1.7,54.2,18.6C55.3,35.5,46.2,56.3,30.2,64.8C14.2,73.3,-8.7,69.5,-29.9,60.1C-51,50.6,-70.4,35.6,-71.9,19.3C-73.3,2.9,-56.8,-14.6,-41.8,-33.3C-26.9,-52,-13.4,-71.9,-1.6,-70.6C10.2,-69.3,20.3,-46.8,31.1,-29.1Z" transform="translate(100 100)" />
+              </svg>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-6">
+                            <div class="item position-relative mb-4">
+                                <h5 class="mb-4">بحث : فصيلة الدم</h5>
+                                <div class="radio">
+                                    <label><input type="radio" name="bloodType" class="radioInput"> مجموعة A+ </label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="bloodType"  class="radioInput" > مجموعة A- </label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="bloodType"  class="radioInput" > مجموعة B+ </label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="bloodType"  class="radioInput" checked> مجموعة B- </label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="bloodType"  class="radioInput" > مجموعة AB+ </label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="bloodType"  class="radioInput" > مجموعة AB- </label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="bloodType" class="radioInput"> مجموعة O+ </label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="bloodType"  class="radioInput" > مجموعة O- </label>
+                                </div>
+        
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-sm-6">
+                            <div class="item position-relative  mb-4">
+                                <h5 class="mb-4">بحث : المدينة</h5>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="city" class="radioInput">القاهرة </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="city" class="radioInput" checked>الاسكندرية </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="city" class="radioInput">طنطا </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="city" class="radioInput">بورسعيد </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="city" class="radioInput">المنصورة </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="city" class="radioInput"> السويس </label>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-lg-8 my-4">
+                    <div class="volunteer-details p-5">
+                        <table class="table volunteers-table table-hover">
+                            <thead>
+                            <tr>
+                                <th scope="col">المتبرع</th>
+                                <th scope="col">العنوان</th>
+                                <th scope="col">فصيلة الدم</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                
+                            <tr>
+                                <td><a href="profile.html">مها احمد </a></td>
+                                <td>الاسكندرية</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td><a href="profile.html">مها احمد </a></td>
+                                <td>الاسكندرية</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td><a href="profile.html">مها احمد </a></td>
+                                <td>الاسكندرية</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td><a href="profile.html">مها احمد </a></td>
+                                <td>الاسكندرية</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td><a href="profile.html">مها احمد </a></td>
+                                <td>الاسكندرية</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td><a href="profile.html">مها احمد </a></td>
+                                <td>الاسكندرية</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td><a href="profile.html">مها احمد </a></td>
+                                <td>الاسكندرية</td>
+                                <td>A+</td>
+                            </tr>
+                            <tr>
+                                <td><a href="profile.html">مها احمد </a></td>
+                                <td>الاسكندرية</td>
+                                <td>A+</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="mt-5">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination pagination-lg justify-content-end">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /volunteers section -->
+    <!-- volunteer article section -->
+    <section class="volunteer-article position-relative">
+        <div class="circle" id="circleOne"></div>
+        <div class="circle" id="circleTwo"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="article">
+                        <img src="img/img2.png" class="w-100" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="article">
+                        <h3 class="py-4 position-relative"> متطوعينا بالدم</h3>
+                        <p class="my-4 text-muted"> فخورون بكل فرد مبادر بالعطاء على عمله الإنساني.
+                            فخور بكل فرد مبادر بالعطاء على عمله الإنساني
+                            فخور بكل فرد مبادر بالعطاء على عمله الإنساني
+                            فخور بكل فرد مبادر بالعطاء على عمله الإنساني
+                            فخور بكل فرد مبادر بالعطاء على عمله الإنساني
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- /volunteer article section -->
+    <!--footer-->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    
+    <path fill="#640303" fill-opacity="0.9"
+      d="M0,160L80,154.7C160,149,320,139,480,154.7C640,171,800,213,960,213.3C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+    </path>
+  </svg>
+  <section id="footer">
+    <div class="container">
+      <div class="row  ">
+
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-7">
+          <div class="call-info">
+            <h3>اتصل بنا</h3>
+            <ul>
+              <li class="addres">مركز بنك الدم -فرع سيدي بشر
+                <ul class="my-3">
+                  <li><i class="fas fa-phone"></i> 01024886435678</li>
+                  <li> <i class="fas fa-map-marker-alt"></i> سيدي بشر حى -محافظة الاسكندرية</li>
+                </ul>
+              </li>
+              <li class="addres">مركز بنك الدم -فرع سيدي بشر
+                <ul class="my-3">
+                  <li><i class="fas fa-phone"></i> 01024886435678</li>
+                  <li> <i class="fas fa-map-marker-alt"></i> سيدي بشر حى -محافظة الاسكندرية</li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+        <div class="location-img d-flex justify-content-center">
+          <img src="img/localisation.svg" >
+        </div>
+        </div>
+      </div>
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="footer-left ">
+            <div class="subscribe-box ">
+              <form>
+
+                <input type="email" class="form-control" id="inputEmail3" placeholder="الايميل">
+
+                <button type="button" class="btn btn-outline-secondary my-3 ">اشترك معنا</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-down py-2">
+       <div class="social-list d-flex justify-content-center">
+            <a href="#" class=""><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class=""><i class="fab fa-twitter"></i></a>
+            <a href="#" class=""><i class="fas fa-globe"></i></a>
+            <a href="#" class=""><i class="fab fa-instagram"></i></a>
+            <a href="#" class=""><i class="fab fa-pinterest fa-fw"></i></a>
+          </div>
+      <p>حقوق النشر محفوظة @2020 موقع بنك الدم</p>
+    </div>
+  </section>
+  <!--end footer-->
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

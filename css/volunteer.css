@@ -1,0 +1,125 @@
+body{
+    direction: rtl;
+    text-align: right;
+    background-color: #F7F7F7;
+}
+
+#header h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%,-50%);
+    font-size: 3.5rem;
+    /* color : white */
+}
+#volunteers,#bloodRequests{
+    padding: 1rem 0 4rem;
+    
+}
+.radioInput{
+    transform: scale(1.4);
+    margin-left: 10px;
+    /* background-color : #c82333; */
+}
+#volunteers .item::before{
+    content : "";
+    height: 100%;
+    width: 3px;
+    background-color: #c82333;
+    position: absolute;
+    left :50%;
+}
+
+#volunteers .volunteers-table tbody tr:nth-of-type(odd) {
+    background-color: rgba(200, 35, 51, 0.09);
+}
+#volunteers .volunteer-details{
+    box-shadow: 3px 3px 5px #a9aeb2;
+    background-color: #fff;
+    border-radius: 50px;
+    border-left: 3px solid #c82333;
+}
+#volunteers .volunteers-table th,#volunteers .volunteers-table td{
+    padding: 1rem;
+}
+#volunteers .volunteers-table a{
+    /* text-decoration: none; */
+    color : #000
+}
+.volunteer-article{
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+.volunteer-article .article h3{
+    margin-top: 10rem;
+}
+.volunteer-article .article h3::after{
+    content: "";
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    background-color: #c82333;
+    bottom: 0;
+    right: 1%;
+    /* animation: movaLine 1s infinite alternate-reverse; */
+}
+.volunteer-article #circleOne{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(229, 170, 176, 0.5);
+    width: 200px;
+    height: 200px;
+    left : -2%;
+    top : 0%;
+}
+.volunteer-article #circleTwo{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(200, 35, 51, 0.09);
+    width: 600px;
+    height: 600px;
+    left : -10%;
+    bottom : -2%;
+}
+#volunteers nav .pagination .page-link{
+    color: #c82333;
+}
+
+#volunteers nav .pagination .page-link:hover{
+    background-color:  rgba(229, 170, 176, 0.5);
+}
+
+#bloodRequests .owl-carousel .item .row,#bloodRequests .search{
+    box-shadow: 3px 3px 5px #a9aeb2;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+#bloodRequests .owl-carousel .owl-nav{
+    text-align: center;
+}
+#bloodRequests .owl-carousel .owl-nav button{
+    padding: 10px!important;
+}
+#bloodRequests .requests{
+    background-color: rgba(229, 170, 176, 0.5);
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px #a9aeb2;
+}
+#bloodRequests .requests h3{
+    /* color:#c82333; */
+    font-size: 2.5rem;
+}
+#bloodRequests .bloodImg,#volunteers .bloodImg{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top:-18%;
+    right: 10%;
+    /* transform: translate(-50%); */
+    z-index: 2;
+}
+
+

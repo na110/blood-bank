@@ -1,0 +1,155 @@
+body{
+    text-align: right;
+    direction: rtl;
+    background-color: #f7f7f7;
+    overflow-x: hidden;
+    padding: 100px 0;
+   
+
+  }
+
+  .my-container
+  {
+      border-radius: 20px;
+      background-color: #f7f7f7;
+      z-index: 9999;
+     position: relative;
+      width: 80%;
+      margin: 0 auto;
+
+
+  }
+  .AdminCircle
+  {
+    position: absolute;
+    border-radius: 50%;
+    background-color:rgba(240, 58, 73, 0.575);
+    z-index: 10;
+
+  }
+
+  .whiteCircle
+  {
+    position: absolute;
+    border-radius: 50%;
+    background-color:#FFF;
+    z-index: 10;
+    width: 300px;
+    height: 300px;
+    top: 20px;
+  }
+
+  #AdmincircleOne
+  {
+    width: 600px;
+    height: 600px;
+    right: -200px;
+    top : -150px;
+  }
+
+  #AdmincircleTwo
+  {
+    width: 500px;
+    height: 500px;
+    left: -200px;
+    bottom: -430px; 
+ } */
+
+  .navbar{
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 9999;
+
+    }
+
+
+    .navbar-brand{
+      padding: .4rem 0 !important;
+      margin: 0  0 0 .3rem   !important;
+      font-weight: bold !important;
+    }
+
+
+    .navbar .img-profile
+    {
+        width:40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    .navbar i
+    {
+        color: #DDD;
+        font-size: 20px;
+    }
+
+    /* sidebar starting */
+
+
+    .sidebar {
+        position: relative;
+        padding: 60px;
+        margin-right: 60px;
+        overflow-x: hidden;
+      /* background-color: #555555; */
+
+
+        color: #555555;
+
+    }
+
+    .sidebar .list-group
+    {
+        border-radius: 20px !important;
+        height: calc(100vh - 110px);
+        background-color: #FFF;
+        padding: 20px 10px;
+    }
+
+    .list-img
+    {
+        width:30px;
+        height:30px
+    }
+
+    .list-group-item
+    {
+        border: none;
+    }
+
+
+    .list-group-item.active
+    {
+        background-color: #f7f7f7;
+        border-color: #f7f7f7;
+        color: black;
+        border-radius: 15px;
+
+    }
+
+    .btnDonarAdd
+    {
+        color: #fff;
+        
+    }
+
+    .btnDonarAdd:hover
+    {
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    table
+    {
+        border-collapse: separate;
+        border-spacing:  0 10px;
+    }
+
+    
+
+    .donarRow td
+    {
+       
+    }
+    /* stidebar ending */

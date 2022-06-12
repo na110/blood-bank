@@ -1,0 +1,40 @@
+body{
+  text-align: right;
+}
+
+
+
+.reg-header{
+  position: relative;
+  height: 100vh;
+padding: 5rem 0;
+  
+
+}
+
+.reg-title{
+text-align: center;
+color:rgb(240, 97, 98);
+font-weight: bold;
+font-size: 1.5rem;
+
+
+}
+
+.reg-content{
+  text-align: center;
+
+}
+
+@media (max-width: 767px){
+ .reg-title{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
